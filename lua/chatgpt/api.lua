@@ -186,7 +186,7 @@ local function loadConfigFromCommand(command, optionName, callback, defaultValue
         end
       end,
     })
-    :sync()
+    :sync(20000)
 end
 
 local function loadConfigFromEnv(envName, configName)
